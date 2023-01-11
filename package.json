@@ -4,11 +4,13 @@
   "description": "",
   "main": "test.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.js": ["standard --fix", "git add"]
+    "*.js": [
+      "standard --fix"
+    ]
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   "homepage": "https://github.com/UT0P1C/clean-tdd-node#readme",
   "devDependencies": {
     "husky": "^8.0.3",
+    "jest": "^29.3.1",
     "lint-staged": "^13.1.0",
     "standard": "^17.0.0"
   }
