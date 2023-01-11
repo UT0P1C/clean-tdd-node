@@ -12,6 +12,9 @@
       "standard --fix"
     ]
   },
+  "standard": {
+    "env": ["jest"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UT0P1C/clean-tdd-node.git"
