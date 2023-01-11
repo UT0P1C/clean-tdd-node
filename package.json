@@ -2,9 +2,13 @@
   "name": "clean-tdd-node",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "test.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": ["standard --fix", "git add"]
   },
   "repository": {
     "type": "git",
@@ -18,6 +22,8 @@
   },
   "homepage": "https://github.com/UT0P1C/clean-tdd-node#readme",
   "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
     "standard": "^17.0.0"
   }
 }
